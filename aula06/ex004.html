@@ -8,13 +8,7 @@
     <title>Primeiro Exercício</title>
     <style>
         body {
-            background-color: rgb(106, 106, 190);
-            color: white;
             font: normal 20pt Arial;
-        }
-
-        h1 {
-            color: rgb(163, 163, 47);
         }
     </style>
 </head>
@@ -23,12 +17,8 @@
     <h1>Olá Mundo</h1>
     <p>Já me livrei da maldição!</p>
     <script>
-        var n1 = Number.parseInt(prompt('Digite um número')); //String, usando o parseInt converte para number
-        var n2 = Number(prompt('Digite outro número')); //String, somente Number o js procura saber se é float ou int
-        var s = n1 + n2 ;
-        alert(`A soma entre ${n1} e ${n2} é igual a: ${s} `) //+ é Concatenação!
-        //(number + number) para adição
-        //(string + string) para concatenação
+        var nome = prompt('Qual é seu nome?');
+        document.write(`olá ${nome} seu nome tem ${nome.length} letras`);
     </script>
 </body>
 
