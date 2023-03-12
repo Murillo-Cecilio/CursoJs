@@ -23,10 +23,10 @@
     <h1>Olá Mundo</h1>
     <p>Já me livrei da maldição!</p>
     <script>
-        var n1 = prompt('Digite um número'); //String 
-        var n2 = prompt('Digite outro número'); //String
+        var n1 = Number.parseInt(prompt('Digite um número')); //String, usando o parseInt converte para number
+        var n2 = Number(prompt('Digite outro número')); //String, somente Number o js procura saber se é float ou int
         var s = n1 + n2 ;
-        alert('A soma dos valores é: ' + s) //+ é Concatenação!
+        alert(`A soma entre ${n1} e ${n2} é igual a: ${s} `) //+ é Concatenação!
         //(number + number) para adição
         //(string + string) para concatenação
     </script>
