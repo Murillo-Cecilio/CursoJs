@@ -14,11 +14,12 @@
 </head>
 
 <body>
-    <h1>Olá Mundo</h1>
-    <p>Já me livrei da maldição!</p>
+
     <script>
         var nome = prompt('Qual é seu nome?');
-        document.write(`olá ${nome} seu nome tem ${nome.length} letras`);
+        document.write(`olá <strong>${nome}</strong> seu nome tem ${nome.length} letras<br/>`);
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br/>`)
+        document.write(`Seu nome em minusculas é ${nome.toLowerCase()}<br/>`)
     </script>
 </body>
 
